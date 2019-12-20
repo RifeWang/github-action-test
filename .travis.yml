@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - "12"
 install:
+  - apt-get install libevent-dev -y
   - wget -O memcached.tar.gz http://memcached.org/files/memcached-1.5.20.tar.gz
   - tar -zxvf memcached.tar.gz
   - cd memcached-1.5.20
