@@ -1,0 +1,25 @@
+{
+  "name": "github-action-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RifeWang/github-action-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RifeWang/github-action-test/issues"
+  },
+  "homepage": "https://github.com/RifeWang/github-action-test#readme",
+  "dependencies": {
+    "io-memcached": "^0.3.1"
+  },
+  "devDependencies": {
+    "ava": "^2.4.0"
+  }
+}
