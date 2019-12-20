@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "12"
+install:
+  - wget http://memcached.org/latest
+  - tar -zxvf memcached-1.x.x.tar.gz
+  - cd memcached-1.x.x
+  - ./configure && make && make test && sudo make install
+  - memcached
+script:
+    - npm ci
+    - npm test
