@@ -18,7 +18,7 @@ jobs:
         tar -zxvf memcached-1.x.x.tar.gz
         cd memcached-1.x.x
         ./configure && make && make test && sudo make install
-        memcached
+        memcached -d
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
