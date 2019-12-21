@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/RifeWang/github-action-test#readme",
   "dependencies": {
-    "io-memcached": "^0.3.1"
+    "io-memcached": "^0.3.3"
   },
   "devDependencies": {
     "ava": "^2.4.0"
