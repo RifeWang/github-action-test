@@ -14,10 +14,10 @@ jobs:
 
     - name: install memcached
       run: |
-        wget http://memcached.org/latest
-        tar -zxvf memcached-1.x.x.tar.gz
-        cd memcached-1.x.x
-        ./configure && make && make test && sudo make install
+        wget -O memcached.tar.gz http://memcached.org/files/memcached-1.5.20.tar.gz
+        tar -zxvf memcached.tar.gz
+        cd memcached-1.5.20
+        ./configure && make && sudo make install
         memcached -d
 
     - name: Use Node.js ${{ matrix.node-version }}
