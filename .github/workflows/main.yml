@@ -13,8 +13,7 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: install linux packages
-      if: success() && matrix.platform == 'ubuntu-latest'
-      run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libevent
+      run: sudo apt-get install -y --no-install-recommends libevent-dev
 
     - name: install memcached
       if: success()
